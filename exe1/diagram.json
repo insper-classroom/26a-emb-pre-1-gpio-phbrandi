@@ -13,7 +13,7 @@
     { "type": "wokwi-led", "id": "led1", "top": 25.2, "left": -73, "attrs": { "color": "red" } },
     {
       "type": "wokwi-resistor",
-      "id": "r1",
+      "id": "r1", 
       "top": 110.4,
       "left": -86.95,
       "rotate": 90,
