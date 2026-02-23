@@ -14,7 +14,7 @@ int main(void) {
             break;
         }
     }
-    printf("B virou 1\n");
+    printf("B agora vale %d\n", b);
 
     return 0;
 }
