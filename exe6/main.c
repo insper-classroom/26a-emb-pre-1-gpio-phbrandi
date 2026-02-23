@@ -29,7 +29,7 @@ void seven_seg_init() {
     }
 }
 
-void seven_seg_display(cnt) {
+void seven_seg_display(int cnt) {
     int value = bits[cnt];
     for (int i = 0; i < 7; i++) {
         int gpio = FIRST_GPIO + i;
@@ -41,11 +41,9 @@ void seven_seg_display(cnt) {
 int main() {
     stdio_init_all();
 
-    int BUTTON_GPIO;
-    int cnt;
-    int last_btn; // Button not pressed (pulled up)
+    int cnt = 0;
+    int last_btn = 1; // Button not pressed (pulled up)
 
-    BUTTON_GPIO = FIRST_GPIO + 7;
 
     gpio_init(BTN_PIN_G);
     gpio_set_dir(BTN_PIN_G, GPIO_IN);
